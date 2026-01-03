@@ -4,7 +4,7 @@
     --std-font-size: 16px;
     --min-padding-size: 5px;
     --min-margin-size: 5px;
-    --min-border-radius: 5px;
+    --min-shadow-offset: 2px;
 }
 
 
@@ -97,12 +97,21 @@ span {
     padding-bottom: calc(2 * var(--min-padding-size));
 }
 
+.py-3 {
+    padding-top: calc(3 * var(--min-padding-size));
+    padding-bottom: calc(3 * var(--min-padding-size));
+}
+
 .pt-1 {
     padding-top: var(--min-padding-size);
 }
 
 .pt-2 {
     padding-top: calc(2 * var(--min-padding-size));
+}
+
+.pt-3 {
+    padding-top: calc(3 * var(--min-padding-size));
 }
 
 .pb-1 {
@@ -113,8 +122,19 @@ span {
     padding-bottom: calc(2 * var(--min-padding-size));
 }
 
+.pb-3 {
+    padding-bottom: calc(3 * var(--min-padding-size));
+}
+
 /* Margins */
 
+.m1 {
+    margin: var(--min-margin-size);
+}
+
+.m2 {
+    margin: calc(2 * var(--min-margin-size));
+}
 
 /* Containers */
 
@@ -130,4 +150,9 @@ span {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+/* Special Styling */
+.shadow {
+    box-shadow: var(--min-shadow-offset) var(--min-shadow-offset) 6px;
 }
